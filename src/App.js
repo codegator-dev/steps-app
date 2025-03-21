@@ -19,7 +19,7 @@ export default function App() {
   }
   return (
     <div>
-      <button className="close" onClick={() => setIsOpen(isOpen)}>
+      <button className="close" onClick={() => setIsOpen(!isOpen)}>
         &times;
       </button>
       {isOpen && (
@@ -38,13 +38,13 @@ export default function App() {
               style={{ backgroundColor: "#7950f2", color: "#fff" }}
               onClick={handlePrevious}
             >
-              previous
+              PREVIOUS
             </button>
             <button
               style={{ backgroundColor: "#7950f2", color: "#fff" }}
               onClick={handleNext}
             >
-              next
+              NEXT
             </button>
           </div>
         </div>
