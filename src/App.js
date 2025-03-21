@@ -1,5 +1,6 @@
 import { useState } from "react";
 
+
 const messages = [
   "Learn React ⚛️",
   "Apply for jobs 💼",
@@ -19,7 +20,7 @@ export default function App() {
   }
   return (
     <div>
-      <button className="close" onClick={() => setIsOpen(isOpen)}>
+      <button className="close" onClick={() => setIsOpen(!isOpen)}>
         &times;
       </button>
       {isOpen && (
@@ -49,6 +50,7 @@ export default function App() {
           </div>
         </div>
       )}
+       
     </div>
   );
 }
